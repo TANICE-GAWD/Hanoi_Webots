@@ -1,0 +1,321 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/solids/protos/SolidBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/kuka/youbot/protos/KukaBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/samples/contests/tower_of_hanoi/protos/YoubotFlag.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/kuka/youbot/protos/Youbot.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/devices/microsoft/protos/Kinect.proto"
+
+WorldInfo {
+  info [
+    "Simulation showing the KUKA youBot model"
+  ]
+  basicTimeStep 16
+  contactProperties [
+    ContactProperties {
+      material2 "box"
+      coulombFriction [
+        10
+      ]
+    }
+    ContactProperties {
+      material1 "InteriorWheelMat"
+      coulombFriction [
+        0, 2, 0
+      ]
+      frictionRotation -0.785398 0
+      bounce 0
+      forceDependentSlip [
+        10, 0
+      ]
+    }
+    ContactProperties {
+      material1 "ExteriorWheelMat"
+      coulombFriction [
+        0, 2, 0
+      ]
+      frictionRotation 0.785398 0
+      bounce 0
+      forceDependentSlip [
+        10, 0
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation 0.24536800754293053 -0.7766768483324324 -0.5801444769527778 5.612784394743679
+  position -3.937090165483516 -1.3211166457174262 2.9712314314009167
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 3 3
+}
+WoodenBox {
+  translation 1 1.75 0.25
+  rotation 0.5773502691896258 0.5773502691896258 0.5773502691896258 2.094395
+  name "wooden box(1)"
+  size 0.5 0.5 1
+  locked TRUE
+}
+WoodenBox {
+  translation 0 1.75 0.25
+  rotation 0.5773502691896258 0.5773502691896258 0.5773502691896258 2.094395
+  name "wooden box(2)"
+  size 0.5 0.5 1
+  locked TRUE
+}
+WoodenBox {
+  translation -1 1.75 0.25
+  rotation 0.5773502691896258 0.5773502691896258 0.5773502691896258 2.094395
+  name "wooden box(3)"
+  size 0.5 0.5 1
+  locked TRUE
+}
+WoodenBox {
+  translation 1 -1.75 0.25
+  rotation 0.5773502691896258 0.5773502691896258 0.5773502691896258 2.094395
+  name "wooden box(4)"
+  size 0.5 0.5 1
+  locked TRUE
+}
+WoodenBox {
+  translation 0 -1.75 0.25
+  rotation 0.5773502691896258 0.5773502691896258 0.5773502691896258 2.094395
+  name "wooden box(5)"
+  size 0.5 0.5 1
+  locked TRUE
+}
+WoodenBox {
+  translation -1 -1.75 0.25
+  rotation 0.5773502691896258 0.5773502691896258 0.5773502691896258 2.094395
+  name "wooden box(6)"
+  size 0.5 0.5 1
+  locked TRUE
+}
+WoodenBox {
+  translation -1.75 1.5 0.25
+  rotation 0 0 1 1.5708
+  name "wooden box(7)"
+  size 1 0.5 0.5
+  locked TRUE
+}
+WoodenBox {
+  translation -1.75 0.5 0.25
+  rotation 0 0 1 1.5708
+  name "wooden box(8)"
+  size 1 0.5 0.5
+  locked TRUE
+}
+WoodenBox {
+  translation -1.75 -0.5 0.25
+  rotation 0 0 1 1.5708
+  name "wooden box(9)"
+  size 1 0.5 0.5
+  locked TRUE
+}
+WoodenBox {
+  translation -1.75 -1.5 0.25
+  rotation 0 0 1 1.5708
+  name "wooden box(10)"
+  size 1 0.5 0.5
+  locked TRUE
+}
+WoodenBox {
+  translation 1.75 1.5 0.25
+  rotation 0 0 1 1.5708
+  name "wooden box(11)"
+  size 1 0.5 0.5
+  locked TRUE
+}
+WoodenBox {
+  translation 1.75 0.5 0.25
+  rotation 0 0 1 1.5708
+  name "wooden box(12)"
+  size 1 0.5 0.5
+  locked TRUE
+}
+WoodenBox {
+  translation 1.75 -0.5 0.25
+  rotation 0 0 1 1.5708
+  name "wooden box(13)"
+  size 1 0.5 0.5
+  locked TRUE
+}
+WoodenBox {
+  translation 1.75 -1.5 0.25
+  rotation 0 0 1 1.5708
+  size 1 0.5 0.5
+  locked TRUE
+}
+DEF SRC_PLATFORM SolidBox {
+  translation 0 1 0.005
+  rotation 0.5773502691896258 0.5773502691896258 0.5773502691896258 2.094395
+  name "platform"
+  size 0.1 0.01 0.2
+  appearance PBRAppearance {
+    baseColor 0.8 0.8 0.8
+    roughness 0.5
+    metalness 0
+  }
+}
+DEF TMP_PLATFORM SolidBox {
+  translation 0.866 -0.5 0.005
+  rotation 0.9351119574552123 -0.25056498860004495 -0.25056498860004495 1.637835
+  name "platform(1)"
+  size 0.1 0.01 0.2
+  appearance PBRAppearance {
+    baseColor 0.8 0.8 0.8
+    roughness 0.5
+    metalness 0
+  }
+}
+DEF DST_PLATFORM SolidBox {
+  translation -0.866 -0.5 0.005
+  rotation -0.1861590761099438 0.6947462840425606 0.6947462840425606 -2.773489
+  name "platform(2)"
+  size 0.1 0.01 0.2
+  appearance PBRAppearance {
+    baseColor 0.8 0.8 0.8
+    roughness 0.5
+    metalness 0
+  }
+}
+DEF C1 KukaBox {
+  translation -0.05993202367687004 1.0000609067202533 0.03488137286293434
+  rotation 0.5773619022409074 0.5786867739093116 0.5759990030748267 2.0947145883351177
+  name "Kuka box(1)"
+  color 0.12549 0.847059 0.12549
+  size 0.05 0.05 0.05
+  contactMaterial "box"
+}
+DEF C2 KukaBox {
+  translation -9.907088657293365e-05 0.9999230117158245 0.034835352907484504
+  rotation 0.5773142172636663 0.575730688801018 0.5790012681488235 2.093997899986862
+  name "Kuka box(2)"
+  color 0.12549 0.847059 0.12549
+  size 0.05 0.05 0.05
+  contactMaterial "box"
+}
+DEF C3 KukaBox {
+  translation 0.060028834872125895 1.000023318404557 0.0348856115744003
+  rotation 0.5774244894796687 0.5777998630201522 0.5768260372443649 2.0944867199451136
+  name "Kuka box(3)"
+  color 0.12549 0.847059 0.12549
+  size 0.05 0.05 0.05
+  contactMaterial "box"
+}
+DEF B1 KukaBox {
+  translation -0.02982723601537724 1.0009801439917747 0.08478898378417911
+  rotation 0.5776083058658175 0.5775067508627498 0.5769355230030216 2.093379430047212
+  name "Kuka box(4)"
+  color 0.901961 0.901961 0.0901961
+  size 0.05 0.05 0.05
+  contactMaterial "box"
+}
+DEF B2 KukaBox {
+  translation 0.02984694563018434 1.0004541259986648 0.0848432261871048
+  rotation 0.5759094573773119 0.577429506860355 0.5787084425774152 2.096746860454436
+  name "Kuka box(5)"
+  color 0.901961 0.901961 0.0901961
+  size 0.05 0.05 0.05
+  contactMaterial "box"
+}
+DEF A1 KukaBox {
+  translation -5.3884165571391823e-05 1.0013149405479338 0.1347763957694655
+  rotation 0.5722932842868514 0.5794924065668222 0.5802318049638108 2.101231261883251
+  color 0.901961 0.0901961 0.0901961
+  size 0.05 0.05 0.05
+  contactMaterial "box"
+}
+YoubotFlag {
+  translation 0 1.35 0
+  rotation 0 0 1 -3.141592653589793
+  name "youBot flag(1)"
+  locked TRUE
+}
+YoubotFlag {
+  translation 1.16913 -0.675 0
+  rotation 0 0 1 3.14
+  name "youBot flag(2)"
+  textureURL [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/samples/contests/tower_of_hanoi/protos/textures/flag_tmp.png"
+  ]
+  locked TRUE
+}
+YoubotFlag {
+  translation -1.16913 -0.675 0
+  rotation 0 0 1 3.14157
+  textureURL [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/samples/contests/tower_of_hanoi/protos/textures/flag_goal.png"
+  ]
+  locked TRUE
+}
+Youbot {
+  hidden position_0_0 9.831880794322183
+  hidden position_0_1 9.831981892173983
+  hidden position_0_2 9.831949659225142
+  hidden position_0_3 9.831913116052775
+  hidden linearVelocity_0 5.554104306355279e-06 0.14836004109966797 -1.3403263305201153e-05
+  hidden angularVelocity_0 0.0007720776484626637 1.3537906656552962e-06 -5.5430861375424665e-06
+  hidden position_6_0 3.7203065549878433e-06
+  hidden rotation_7 0 0 1 3.7202801392087456e-06
+  hidden position_7_0 -0.2400058728742387
+  hidden linearVelocity_7 6.174052085176577e-06 0.14822249144162356 0.0001143792328570357
+  hidden angularVelocity_7 0.0007714793724815706 1.4598723149680879e-06 3.153344723060456e-05
+  hidden rotation_8 0 1 0 0.24000587287423886
+  hidden position_8_0 -1.2000022467463893
+  hidden linearVelocity_8 5.515409851129177e-06 0.18604568423287998 -0.009090038615317857
+  hidden angularVelocity_8 -0.4992608276514896 7.423818429275831e-07 1.1243630751705017e-05
+  hidden rotation_9 0 1 0 1.2000022467463891
+  hidden position_9_0 -1.569780075757726
+  hidden linearVelocity_9 4.683918439497753e-06 0.2276659744310357 -0.05036483199014823
+  hidden angularVelocity_9 -0.4992607309526781 7.320355450942617e-07 1.1188649024836142e-05
+  hidden rotation_10 0 0.9999999999999999 0 1.5697800757577263
+  hidden position_10_0 1.5707963224357537
+  hidden linearVelocity_10 3.868305168738789e-06 0.2190776771495041 -0.08676898951049555
+  hidden angularVelocity_10 -0.5113599159191411 7.152885670450277e-07 1.0695795152190692e-05
+  hidden rotation_11 0 0 1 1.5707963224357537
+  hidden position_11_0 2.5376347957990297e-06
+  hidden position_11_1 3.0897395153016743e-06
+  hidden linearVelocity_11 3.640297795564015e-06 0.16837056926220773 -0.09351344108034433
+  hidden angularVelocity_11 -0.5113598593220704 7.200185338212959e-07 1.0644055383638283e-05
+  hidden translation_12 0 2.5376347957990297e-06 0.09
+  hidden linearVelocity_12 3.385820060333932e-06 0.13608745941554945 -0.10296575854032408
+  hidden angularVelocity_12 -0.5113598562984123 7.200073518371904e-07 1.0644052100504942e-05
+  hidden translation_13 0 -3.0897395153016743e-06 0.09
+  hidden linearVelocity_13 3.5942820914166657e-06 0.13474788748128413 -0.0928241596710557
+  hidden angularVelocity_13 -0.5113598560188963 7.200079442453769e-07 1.0644055612556852e-05
+  hidden rotation_14 0 -1 0 2.73448982003699
+  hidden linearVelocity_14 -7.426167752100313e-06 0.14838471643956683 0.00015627702464225733
+  hidden angularVelocity_14 -2.9678064659902783 -3.198385839087746e-06 -0.0001261065863898441
+  hidden rotation_15 0 -1 0 2.7343887221851895
+  hidden linearVelocity_15 2.096578178738367e-05 0.14838646607899 0.00015669583197773713
+  hidden angularVelocity_15 -2.9681215540816024 -4.552714566810388e-06 -0.00012579608131577745
+  hidden rotation_16 0 -1 0 2.734420955134031
+  hidden linearVelocity_16 1.9045219391308724e-05 0.14838429764809688 -0.00018862869023141893
+  hidden angularVelocity_16 -2.9680342311240113 -4.580116503359666e-06 -0.0001257817483825854
+  hidden rotation_17 0 -0.9999999999999999 0 2.7344574983063983
+  hidden linearVelocity_17 -1.0550574041602842e-05 0.14838606427460427 -0.0001882098827943313
+  hidden angularVelocity_17 -2.9678938082005017 -3.1706473298511388e-06 -0.00012611828827105534
+  translation -4.334049331665104e-06 0.4920536019427514 0.10192830734626093
+  rotation -0.001461771219725005 0.001421242593683666 0.9999979216450359 1.5708000731426375
+  controller "hanoi"
+  bodySlot [
+    Kinect {
+      translation 0.27 0 -0.02
+      rotation 0.5773502691896258 -0.5773502691896258 -0.5773502691896258 2.0944
+      foot FALSE
+    }
+    GPS {
+    }
+    Compass {
+    }
+  ]
+}
