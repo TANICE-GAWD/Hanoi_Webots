@@ -22,7 +22,7 @@
  * Description: An interactive and recursive Tower of Hanoi solver for the YouBot robot.
  * The robot dynamically calculates and executes the necessary moves to solve
  * the puzzle for a user-specified number of disks (1 to 3).
- * Author: [Your Name Here]
+ * Author: Prince Sharma
  * Original Author: Cyberbotics Ltd.
  */
 
